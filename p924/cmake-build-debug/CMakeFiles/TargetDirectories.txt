@@ -1,0 +1,3 @@
+/Users/antonyteng/Desktop/Github/UVA/p924/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/antonyteng/Desktop/Github/UVA/p924/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/antonyteng/Desktop/Github/UVA/p924/cmake-build-debug/CMakeFiles/p924.dir
