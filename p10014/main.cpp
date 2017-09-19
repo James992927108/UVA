@@ -1,19 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int TestCaseNum;
-    scanf("%d", &TestCaseNum);
-    while(TestCaseNum--) {
-        int n_line;
-        double a_0, a_1, c;
-        scanf("%d %lf %lf", &n_line, &a_0, &a_1);
-        for(int i = 0; i < n_line; i++) {
-            scanf("%lf", &c);
-            a_1 = a_1 - 2*(n_line-i)*c;
+    int TestCaseCount;
+    scanf("%d", &TestCaseCount);
+    while(TestCaseCount--) {
+        int N_Count;
+        double A0, An1, Ci;
+        scanf("%d %lf %lf", &N_Count, &A0, &An1);
+
+        //(n + 1)a1 = na0 + an+1 – 2(nc1 + (n-1)c2 + (n-2)c3 + …… + cn)。
+        for(int i = 0; i < N_Count; i++) {
+            scanf("%lf", &Ci);
+            An1 = An1 - 2*(N_Count-i)*Ci;
         }
-        a_1 = a_1 + n_line*a_0;
-        printf("%.2lf\n", a_1/(n_line+1));
-        if(TestCaseNum)
+        An1 = An1 + N_Count*A0;
+        printf("%.2lf\n", An1/(N_Count+1));
+        if(TestCaseCount)
             puts("");
     }
     return 0;
